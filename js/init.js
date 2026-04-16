@@ -193,3 +193,9 @@ $('.preloader').addClass('none');
     //   $(".open").removeClass("open");
     //   $(this).addClass("open");
     // });
+// 
+
+window.scrollTo({
+  top: 1000,
+  behavior: "smooth",
+});
