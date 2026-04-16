@@ -90,9 +90,9 @@
         display: none;
         }
 
-        /* .inside, .line {
+        .line {
         display: none;
-        } */
+        }
         
         h1 {
         position: absolute;
