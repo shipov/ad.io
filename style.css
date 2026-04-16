@@ -129,15 +129,7 @@
 }
 
 h1 {
-   @keyframes spin3d {
-    0% {
-        transform: rotateX(32deg) rotate(32deg) rotateY(0);
-    }
-
-    to {
-        transform: rotateX(32deg) rotate(32deg) rotateY(-360deg)
-    }
-} 
+ 
                 position: absolute;
         width: 300px;
         height: 300px;
@@ -152,6 +144,16 @@ h1 {
 canvas {
   width: 200px;
 }
+
+  @keyframes spin3d {
+    0% {
+        transform: rotateX(32deg) rotate(32deg) rotateY(0);
+    }
+
+    to {
+        transform: rotateX(32deg) rotate(32deg) rotateY(-360deg)
+    }
+} 
 }
 
 .boks {
