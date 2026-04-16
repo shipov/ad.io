@@ -112,7 +112,7 @@
 
 
 @media all and (max-width: 640px) {
-
+.fp-nav {display: none;}
   body {
     cursor: none!important;
   }
@@ -1387,7 +1387,7 @@ a span:nth-of-type(3) {
     
     
     .txt {
-      width: 400px;
+      width: auto;
       height: 50px;
       color: white;
       font-family: 'MTSWide-Medium';
