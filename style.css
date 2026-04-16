@@ -118,6 +118,9 @@
 
 
 @media all and (max-width: 640px) {
+  body {
+    cursor: none;
+  }
   .cases_wrap {
   display: grid; 
   grid-template-columns: 1fr; 
@@ -142,6 +145,9 @@ h1 {
         top: -150px;
         bottom: 0;
         }
+
+}
+
 .boks {
   width: 100%;
   min-width: 100%;
