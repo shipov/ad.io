@@ -65,8 +65,8 @@
 .cases_wrap {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 10px 10px;
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 24px 24px;
   width: 90%;
   min-height: 100vh;
   margin: 100px 0 100px 0;
@@ -86,7 +86,7 @@
   display: grid; 
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
-  gap: 10px 10px;
+  gap: 24px 24px;
 }
       h2 {
         display: none;
@@ -120,7 +120,7 @@
   display: grid; 
   grid-template-columns: 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
-  gap: 10px 10px;
+  gap: 24px 24px;
 }
 .float-action-button_txt.hovered {
   display: none;
@@ -144,10 +144,22 @@ display: none;
   min-width: 100%;
   height: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: black;
+  flex-direction: column;
+  background: transparent;
   color: white;
+}
+.boks h3 {
+  font-size: 20px;
+  color: black;
+  height: auto;
+  background: none;
+  text-align: left;
+  margin: 0;
+}
+.boks p {
+  font-size: 14px;
+  color: black;
 }
   .lines {
     position: absolute;
