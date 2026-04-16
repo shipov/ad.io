@@ -1,0 +1,68 @@
+@layer base, text, box;
+@layer settings {
+	:root {
+
+    font-family: Iosevka Web,system-ui,-apple-system,BlinkMacSystemFont,SF Pro Text,sans-serif;
+    line-height: 1.5;
+    font-weight: 100;
+		--radius: 20vmin;
+		--radius-text: calc(var(--radius) + 8vmin);
+		--blur: 8px;
+		--spinDuration: 28s;
+		--speedYMod: -3;
+		--speedXMod: 1;
+		--speedZMod: -1;
+		--perspective: 1200px;
+	}
+	/* body{perspective: var(--perspective);} */
+	h1{transform-style: preserve-3d;}
+}
+@media (max-width: 800px) {
+    :root {
+        --s-maxBodyWidth: 95vw;
+        --s-maxBodyHeight: 77vh
+    }
+}
+
+
+@layer text {
+	h1 {
+		position: relative;
+    margin-top: 10px!important;
+		animation: spin3d var(--spinDuration) linear infinite;
+    pointer-events: none;
+    --r: calc(var(--s-maxBodyWidth) / 2 + 2rem);
+    transform-style: preserve-3d;
+    -webkit-user-select: none;
+    user-select: none;
+    line-height: 1.5;
+    font-weight: 200;
+    font-size: max(0.8rem,3.5vmin);
+
+		span {
+			position: absolute;
+			top: 50%;
+			left: 55%;
+			transform: translate3d(-50%,-55%, 0) rotateY(calc(var(--i) * 360deg)) translateZ(var(--radius-text));
+			backface-visibility: visible;
+		}
+    h2{}
+	}
+	@keyframes spin3d {
+		0% {transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);}
+		100% {transform:
+				rotateX(calc(360deg * var(--speedXMod)))
+				rotateZ(calc(360deg * var(--speedZMod)))
+				rotateY(calc(360deg * var(--speedYMod)));
+		}
+	}
+  /* @keyframes spin3d {
+    0% {
+        transform: rotateX(32deg) rotate(32deg) rotateY(0);
+    }
+
+    to {
+        transform: rotateX(32deg) rotate(32deg) rotateY(-360deg)
+    }
+} */
+}

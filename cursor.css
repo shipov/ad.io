@@ -1,0 +1,146 @@
+
+.cursor {
+  position: absolute;
+  background: no-repeat center center url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 19L2 2L19 9L12.735 11.685C12.2632 11.8873 11.8873 12.2632 11.685 12.735L9 19Z' stroke='%2396F006' style='stroke:%2396F006;stroke:color(display-p3 0.5882 0.9412 0.0235);stroke-opacity:1;' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+  transition: 0.1s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: scale(1);
+}
+.cursor.active {
+  opacity: 0.5;
+  transform: scale(0);
+}
+.cursor.hovered {
+  opacity: 0.08;
+}
+
+.cursor-follower {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  z-index: 1;
+  transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(5px, 5px);
+}
+.cursor-follower.active {
+  opacity: 0.7;
+  transform: scale(3);
+}
+.cursor-follower.hovered {
+  opacity: 0.08;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.link-list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  list-style: none;
+}
+.link-list__item {
+  display: inline-block;
+}
+
+
+
+/*-------------------------------*/
+
+.cursor_black {
+  position: absolute;
+  background: no-repeat center center url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 19L2 2L19 9L12.735 11.685C12.2632 11.8873 11.8873 12.2632 11.685 12.735L9 19Z' stroke='black' style='stroke:black;stroke-opacity:1;' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+  transition: 0.1s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: scale(1);
+}
+.cursor_black.active {
+  opacity: 0.5;
+  transform: scale(0);
+}
+.cursor_black.hovered {
+  opacity: 0.08;
+}
+
+.cursor_black-follower {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  z-index: 1;
+  transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(5px, 5px);
+}
+.cursor_black-follower.active {
+  opacity: 0.1;
+  transform: scale(3);
+}
+.cursor_black-follower.hovered {
+  opacity: 0.02;
+}
+
+/*-------------------------------*/
+
+.cursor_red {
+  position: absolute;
+  background: no-repeat center center url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 19L2 2L19 9L12.735 11.685C12.2632 11.8873 11.8873 12.2632 11.685 12.735L9 19Z' stroke='grey' style='stroke:rred;stroke-opacity:1;' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+  transition: 0.1s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: scale(1);
+}
+.cursor_red.active {
+  opacity: 0.5;
+  transform: scale(0);
+}
+.cursor_red.hovered {
+  opacity: 0.08;
+}
+.cursor_red-follower {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  z-index: 1;
+  transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(5px, 5px);
+}
+.cursor_red-follower.active {
+  opacity: 0.1;
+  transform: scale(3);
+}
+.cursor_red-follower.hovered {
+  opacity: 0.02;
+}
