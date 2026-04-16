@@ -1,7 +1,7 @@
 var myFullpage = new fullpage('#fullpage', {
 
   sectionsColor: ['#f4f7fb', '#f4f7fb', '#7BAABE'],
-  responsiveHeight: 300,
+  responsiveHeight: 1000,
   anchors: ['firstPage', 'secondPage', 'thirdPage'],
   menu: '#menu',
   keyboardScrolling: true,

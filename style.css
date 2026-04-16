@@ -74,9 +74,7 @@
 }
 
 @media  all and (max-width: 1440px) {
- body {
-    cursor: none!important;
-  }
+
   .first-container {
         width: 100%!important;
         display: flex!important;
@@ -236,7 +234,7 @@ display: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none;
+    cursor: pointer;
   }
 
   body {
