@@ -242,7 +242,7 @@ display: none;
   body {
     margin: 0;
     background: #f4f7fb;
-    cursor: none;
+    cursor: pointer!important;
     overflow: hidden!important;
   }
 
