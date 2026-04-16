@@ -74,6 +74,10 @@
   scroll-behavior: smooth;
 }
 
+.fp-auto-height, #fbtn {
+  z-index: 200;
+}
+
 @media  all and (max-width: 1440px) {
 
   .first-container {
@@ -81,7 +85,7 @@
         display: flex!important;
 }
 
-  .cases_wrap {
+.cases_wrap {
   display: grid; 
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
@@ -93,7 +97,7 @@
         .line {
         display: none;
         }
-        
+
         h1 {
         position: absolute;
         width: 300px;
@@ -104,8 +108,7 @@
         right: 0;
         top: -130px;
         bottom: 0;
-        }
-    
+        } 
 }
 
 
