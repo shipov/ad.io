@@ -67,7 +67,7 @@
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
-  gap: 24px 24px;
+  gap: 32px;
   width: 90%;
   min-height: 100vh;
   margin: 100px 0 50px 0;
@@ -141,6 +141,20 @@ display: none;
   flex-direction: column;
   background: transparent;
   color: white;
+  transition: 0.4s ease-in-out;
+  scale: 1;
+}
+
+.boks img {
+  border-radius: 20px;
+  transition: 0.4s ease-in-out;
+  scale: 1;
+  margin-bottom: 18px;
+}
+
+.boks:hover img {
+   border-radius: 30px;
+  scale: 1.05;
 }
 
 .boks h3 {
