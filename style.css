@@ -111,9 +111,8 @@
 
 @media all and (max-width: 640px) {
 
-  
   body {
-    cursor: none;
+    cursor: none!important;
   }
   .cases_wrap {
   display: grid; 
@@ -129,31 +128,13 @@
 }
 
 h1 {
- 
-                position: absolute;
-        width: 300px;
-        height: 300px;
-        display: block;
-        margin: auto;
-        left: -30px;
-        right: 0;
-        top: -158px;
-        bottom: 0;
-        zoom: 1.4;
+display: none;
     }
-canvas {
+/* canvas {
   width: 200px;
-}
+} */
 
-  @keyframes spin3d {
-    0% {
-        transform: rotateX(32deg) rotate(32deg) rotateY(0);
-    }
 
-    to {
-        transform: rotateX(32deg) rotate(32deg) rotateY(-360deg)
-    }
-} 
 }
 
 .boks {
