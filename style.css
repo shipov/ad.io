@@ -131,9 +131,6 @@
 h1 {
 display: none;
     }
-/* canvas {
-  width: 200px;
-} */
 
 
 }
@@ -236,14 +233,13 @@ display: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: pointer;
+    cursor: auto;
     scroll-behavior: smooth;
   }
 
   body {
     margin: 0;
     background: #f4f7fb;
-    cursor: pointer!important;
     overflow: hidden!important;
   }
 
