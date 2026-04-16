@@ -105,7 +105,7 @@
         top: 0;
         bottom: 0;
         }
-     @keyframes spin3d {
+     /* @keyframes spin3d {
     0% {
         transform: rotateX(32deg) rotate(32deg) rotateY(0);
     }
@@ -113,7 +113,7 @@
     to {
         transform: rotateX(32deg) rotate(32deg) rotateY(-360deg)
     }
-} 
+}  */
 }
 
 
