@@ -83,7 +83,9 @@
   align-items: center;
   flex-direction: row;
 }
-
+.tag_wrap a{
+  margin: 14px 0 0 0;
+}
 .tag_wrap span {
     background: #e4ebf57a;
     color: black;
