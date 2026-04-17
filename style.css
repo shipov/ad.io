@@ -85,13 +85,21 @@
 }
 
 .tag_wrap span {
-    background: var(--greyLight-2);
+    background: #e4ebf57a;
     color: black;
     padding: 2px 20px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 300;
-    margin: 20px 12px 0 0;
+    margin: 14px 12px 0 0;
+    box-shadow: 0 1px 1px 0 var(--greyLight-3);
+    transition: .2s all;
+    cursor: pointer;
+}
+
+.tag_wrap span:hover {
+    background: #000;
+    color: white;
 }
 
 @media  all and (max-width: 1440px) {
