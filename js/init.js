@@ -54,7 +54,7 @@ var myFullpage = new fullpage('#fullpage', {
             $('.share').addClass('active');
             $('.buttons, .vicon').addClass('active');
             $('.contact, #fp-nav ul li a.active span, #fp-nav ul li a span, .btn, .hole, body, .vicon_txt, .oldweb').addClass('white');
-        }, 100);
+        }, 50);
 
     }
 
