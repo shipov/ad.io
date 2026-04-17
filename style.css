@@ -172,6 +172,8 @@ display: none;
 
 .boks img {
   border-radius: 20px;
+  height: 332px;
+  width: 500px;
   transition: 0.32s ease-in-out;
   scale: 1;
   margin-bottom: 18px;
@@ -196,7 +198,7 @@ display: none;
 .boks p {
   font-size: 14px;
   color: black;
-  font-family: 'Gilroy-Regular';
+  font-weight: 300;
 }
 
 #fbtn {
@@ -212,10 +214,11 @@ display: none;
     border-radius: 20px;
     transition: .2s all;
     cursor: pointer;
+    font-weight: 400;
 }
 
 #fbtn:hover {
-  background: white;
+  background: #e4ebf57a;
   color: black;
   border-radius: 50px;
 }
