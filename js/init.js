@@ -182,3 +182,17 @@ $('.preloader').addClass('none');
 
 
 new WOW().init();
+
+$(window).scroll(function(){
+	if ($(this).scrollTop() > 450) {
+		$('.totop').fadeIn();
+	} else {
+		$('.totop').fadeOut();
+	}
+});
+
+
+$('.totop').click(function(){
+	$('html, body').animate({scrollTop : 0},50);
+	return false;
+});
