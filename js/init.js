@@ -154,6 +154,20 @@ var typed = new Typed('.typed', {
   loop: true
 });
 
+var typed = new Typed('.typed_promo', {
+  strings: ['Hi! I am Mikhail Shipov, a UX/UI designer. I work in design and branding, and my programming skills help me create thoughtful solutions. Ive completed numerous projects, from landing pages and websites to design systems and government information platforms.'],
+  typeSpeed: 10,
+  backSpeed: 10,
+  startDelay: 1000,
+  backDelay: 500,
+  showCursor: true,
+  cursorChar: '|',
+  autoInsertCss: true,
+  shuffle: true,
+  smartBackspace: true,
+  loop: false
+});
+
 setTimeout(function(){
 $('body').addClass('selected');
 },2500)
