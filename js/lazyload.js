@@ -18,7 +18,7 @@ var lazyload = lazyload || {};
 
         var url = "./" + page + ".html";
 
-        $(buttonId).hide();
+        // $(buttonId).hide();
         $(loadingId).show("slow");
 
         $.ajax({
@@ -31,17 +31,17 @@ var lazyload = lazyload || {};
                 }
                 appendContests(response);
             },
-            error: function(response) {
-                $(loadingId).text("Извините, произошла ошибка при обработке запроса. Пожалуйста, обновите страницу.");
-            }
+            // error: function(response) {
+            //     $(loadingId).text("Извините, произошла ошибка при обработке запроса. Пожалуйста, обновите страницу.");
+            // }
         });
     };
 
     var appendContests = function(response) {
         var id = $(buttonId);
 
-        $(buttonId).show();
-        $(loadingId).hide("slow");
+        $(buttonId).show("slow");
+        // $(loadingId).hide("slow");
 
         $(response).appendTo($(container));
         page += 1;
