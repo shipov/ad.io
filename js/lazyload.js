@@ -18,39 +18,30 @@ var lazyload = lazyload || {};
 
         var url = "./" + page + ".html";
 
-        $(buttonId).hide();
-        $(loadingId).show(slow);
+        $(buttonId).hide("slow");
+        $(loadingId).show("slow");
 
         $.ajax({
-  url: url,
-  beforeSend: function() {
-    $(loadingId).text("Загрузка...");
-  },
-  success: function(response) {
-    if (!response || typeof response === 'string' && response.trim() === "NONE") {
-      $(buttonId).fadeOut("fast");
-      $(loadingId).text("Больше записей для загрузки нет.");
-      return;
-    }
-    appendContents(response); // Исправлено: Contests → Contents
-    $(loadingId).text(""); // Очищаем сообщение после успешной загрузки
-  },
-  error: function(xhr, status, error) {
-    console.error("AJAX error:", status, error);
-    $(loadingId).text(
-      "Извините, произошла ошибка при обработке запроса. Пожалуйста, обновите страницу."
-    );
-  },
-  complete: function() {
-    // Дополнительные действия после завершения запроса (успех/ошибка)
-  }
-});
+            url: url,
+            success: function(response) {
+                if (!response || response.trim() == "NONE") {
+                    $(buttonId).fadeOut("slow");
+                    $(loadingId).text("No more entries to load!");
+                    return;
+                }
+                appendContests(response);
+            },
+            error: function(response) {
+                $(loadingId).text("Извините, произошла ошибка при обработке запроса. Пожалуйста, обновите страницу.");
+            }
+        });
+    };
 
     var appendContests = function(response) {
         var id = $(buttonId);
 
-        $(buttonId).show(slow);
-        $(loadingId).hide();
+        $(buttonId).show("slow");
+        $(loadingId).hide("slow");
 
         $(response).appendTo($(container));
         page += 1;
