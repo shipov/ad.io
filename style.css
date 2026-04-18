@@ -198,7 +198,7 @@ display: none;
 }
 
 .boks:hover img {
-   border-radius: 32px;
+  border-radius: 32px;
   scale: 1.05;
 }
 
@@ -1688,14 +1688,6 @@ a span:nth-of-type(3) {
       display: block;
     }
 
-    .figma {
-      margin-top: 40px;
-      font-family: 'MTSWide-Medium';
-      letter-spacing: 5px;
-      font-size: 10px;
-      opacity: .8;
-    }
-
     .click {
       margin-bottom: 30px;
       font-family: 'MTSWide-Medium';
@@ -1726,3 +1718,9 @@ a span:nth-of-type(3) {
         margin-top: 0;
       }
     }
+
+    .zoomIn {
+  animation-name: zoomIn;
+  animation-delay: 320ms;
+  animation-duration: 1s; /* Анимация длится 3 секунды */
+}
