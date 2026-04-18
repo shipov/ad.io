@@ -10,7 +10,7 @@ var lazyload = lazyload || {};
     "use strict";
 
     var page = 2,
-        buttonId = "#button-more",
+        buttonId = "#fbtn",
         loadingId = "#loading-div",
         container = "#data-container";
 
@@ -25,14 +25,14 @@ var lazyload = lazyload || {};
             url: url,
             success: function(response) {
                 if (!response || response.trim() == "NONE") {
-                    $(buttonId).fadeOut();
+                    $(buttonId).fadeOut("fbtn");
                     $(loadingId).text("No more entries to load!");
                     return;
                 }
                 appendContests(response);
             },
             error: function(response) {
-                $(loadingId).text("Sorry, there was some error with the request. Please refresh the page.");
+                $(loadingId).text("Извините, произошла ошибка при обработке запроса. Пожалуйста, обновите страницу.");
             }
         });
     };
