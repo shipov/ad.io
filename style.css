@@ -85,14 +85,14 @@
 }
 
 .tag_wrap a{
-  margin: 14px 0 0 0;
   text-transform: capitalize;
 }
 
 .tag_wrap span {
     background: #e4ebf57a;
     color: black;
-    padding: 2px 20px;
+    padding: 2px 15px;
+    height: 22px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 300;
@@ -100,11 +100,23 @@
     box-shadow: 0 1px 1px 0 var(--greyLight-3);
     transition: .2s all;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .tag_wrap span:hover {
     background: #000;
     color: white;
+}
+
+.star {
+    display: block;
+    margin: 0 5px 1px 0;
+    width: 15px;
+}
+
+.tag_wrap span:hover .star {
+ color: #62f300;
 }
 
 .aboutme {
