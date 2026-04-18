@@ -122,6 +122,7 @@
 
 @media  all and (max-width: 1440px) {
 
+  
   .first-container {
         width: 100%!important;
         display: flex!important;
@@ -155,6 +156,8 @@
 
 
 @media all and (max-width: 640px) {
+
+
 .fp-nav {display: none;}
   body {
     cursor: none!important;
@@ -190,8 +193,6 @@ display: none;
 
 .boks img {
   border-radius: 20px;
-  height: 332px;
-  width: 500px;
   transition: 0.32s ease-in-out;
   scale: 1;
   margin-bottom: 18px;
