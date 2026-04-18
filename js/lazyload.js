@@ -18,7 +18,7 @@ var lazyload = lazyload || {};
 
         var url = "./" + page + ".html";
 
-        $(buttonId).hide("slow");
+        $(buttonId).hide();
         $(loadingId).show("slow");
 
         $.ajax({
@@ -40,7 +40,7 @@ var lazyload = lazyload || {};
     var appendContests = function(response) {
         var id = $(buttonId);
 
-        $(buttonId).show("slow");
+        $(buttonId).show();
         $(loadingId).hide("slow");
 
         $(response).appendTo($(container));
