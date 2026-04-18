@@ -170,42 +170,15 @@ var typed = new Typed('.typed_promo', {
 
 setTimeout(function(){
 $('body').addClass('selected');
-},2500)
+},1500)
 
 setTimeout(function(){
 $('.preloader').addClass('selected');
-},2500)
+},1500)
 
 setTimeout(function(){
 $('.preloader').addClass('none');
-},3000)
+},2000)
 
 
-
-
-// window.addEventListener('load', () => { /* Страница загружена, включая все ресурсы */
-//   const preloader = document.querySelector('.preloader') /* находим блок Preloader */
-//   preloader.classList.add('preloader_hidden') /* добавляем ему класс для скрытия */
-// })
-
-// const items = document.querySelectorAll('.case-item')
-// items.forEach(item => item.addEventListener("click", event => {
-//   event.target.classList.toggle('open')
-// }));
-
-
-// document.getElementsByClassName('.open').addEventListener('click', function() {
-//   this.classList.remove('open');
-// });
-
-// document.getElementsByClassName('.case-item').addEventListener('click', function() {
-
-	//   $(".open").addClass("open");
-	//    $(this).removeClass("open");
-	// });
-	//   $(".case-item").click(function(){
-    //   $(".open").removeClass("open");
-    //   $(this).addClass("open");
-    // });
-// 
-
+new WOW().init();
