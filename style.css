@@ -1845,6 +1845,11 @@ a span:nth-of-type(3) {
   background-size: 25%;
 }
 
+.fancybox-image, .fancybox-spaceball {
+  border-radius: 20px;
+      box-shadow: 0px 0px 20px #00000057;
+}
+
 .scrolldown {
      --color: white;
     --sizeX: 30px;
