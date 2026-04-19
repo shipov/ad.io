@@ -122,12 +122,12 @@
     position: absolute;
     left: 0;
     right: 0;
-    width: 35%;
+    width: 25%;
     margin: 35% auto auto auto;
     text-align: center;
     font-weight: 300;
     line-height: 28px;
-        font-size: 14px;
+        font-size: 13px;
 }
 
 .projects {
@@ -462,7 +462,7 @@ scale: 1.4;
           h2 {
             font-size: 14px;
             font-family: 'iosevka-regular';
-            letter-spacing: 1.5rem;
+            letter-spacing: 1.32rem;
             text-align: center;
             opacity: .5;
           }
@@ -1799,7 +1799,7 @@ a span:nth-of-type(3) {
     --sizeY: 50px;
     width: var(--sizeX);
     height: var(--sizeY);
-    border: calc(var(--sizeX) / 15) solid black;
+    border: calc(var(--sizeX) / 16) solid black;
     border-radius: 50px;
     box-sizing: border-box;
     position: absolute;
@@ -1817,7 +1817,7 @@ a span:nth-of-type(3) {
   bottom: 30px;
   left: 50%;
   width: 6px;
-  height: 6px;
+  height: 7px;
   margin-left: -3px;
   background-color: black;
   border-radius: 100%;
@@ -1843,38 +1843,5 @@ a span:nth-of-type(3) {
   100% {
     height: 3px;
     opacity: 0;
-  }
-}
-.chevrons {
-  padding: 6px 0 0 0;
-  margin-left: -3px;
-  margin-top: 48px;
-  width: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.chevrondown {
-  margin-top: -6px;
-  position: relative;
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg) !important;
-}
-.chevrondown.one {
-  animation: pulse 500ms ease infinite alternate;
-}
-.chevrondown.two {
-  animation: pulse 500ms ease infinite alternate 250ms;
-}
-@keyframes pulse {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
   }
 }
