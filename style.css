@@ -287,15 +287,15 @@ scale: 1.4;
     margin: auto auto 50px auto;
     color: var(--fg);
     border-radius: 20px;
-    transition: .2s all;
+    transition: .2s ease-in;
     cursor: pointer;
     font-weight: 400;
     border: 2px solid black;
 }
 
 #fbtn:hover {
-  background: #e4ebf57a;
-  color: black;
+  background: #000;
+  color: #62f300;
   border-radius: 50px;
 }
 
