@@ -37,8 +37,7 @@
     user-select: none;
     line-height: 1.5;
     font-weight: 200;
-    font-size: max(0.75rem,3.4vmin);
-	scale: 0.9;
+    font-size: max(0.8rem,3.5vmin);
 
 		span {
 			position: absolute;

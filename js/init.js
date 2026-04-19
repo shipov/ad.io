@@ -1,34 +1,7 @@
-// var myFullpage = new fullpage('#fullpage', {
-//   sectionsColor: ['#f4f7fb', '#f4f7fb', '#7BAABE'],
-
-//   anchors: ['firstPage', 'secondPage', 'thirdPage'],
-//   menu: '#menu',
-//   keyboardScrolling: true,
-//   navigation: true,
-//   navigationPosition: 'left',
-//   css3: true,
-//   scrollingSpeed: 700,
-//   autoScrolling: true,
-//   fitToSection: true,
-//   fitToSectionDelay: 800,
-//   scrollBar: true,
-//   easing: 'easeInOutCubic',
-//   easingcss3: 'ease',
-//   parallax: true,
-//   scrollBar: true,
-//   dragAndMove: 'vertical',
-//   parallaxOptions: {
-//       type: 'reveal',
-//       percentage: 500,
-//       property: 'translate'
-
-//   },
-
 var myFullpage = new fullpage('#fullpage', {
 
-  sectionsColor: ['#fff', '#fff', '#fff'],
+  sectionsColor: ['#f4f7fb', '#f4f7fb', '#7BAABE'],
   anchors: ['firstPage', 'secondPage', 'thirdPage'],
-    responsiveHeight: 900,
   menu: '#menu',
 
   keyboardScrolling: true,
@@ -45,6 +18,7 @@ var myFullpage = new fullpage('#fullpage', {
   },
 
 
+
   onLeave: function(origin, destination, direction){
     var leavingSection = this;
 
@@ -54,7 +28,7 @@ var myFullpage = new fullpage('#fullpage', {
             $('.share').addClass('active');
             $('.buttons, .vicon').addClass('active');
             $('.contact, #fp-nav ul li a.active span, #fp-nav ul li a span, .btn, .hole, body, .vicon_txt, .oldweb').addClass('white');
-        }, 50);
+        }, 100);
 
     }
 
@@ -87,6 +61,171 @@ $(".brand-logo").click(function () {
   $(this).toggleClass("open");
 });
 
+
+
+
+$(".case-item").click(function(){
+	// $(".case-item").toggleClass("open");
+	// $(this).toggleClass("open");
+  $("img.bayk, .case-item.item-1 a.down, .case-item.item-1 a.UP1, .case-item.item-1 a.arrow").toggleClass("play");
+  $(".title, .enter-pic").toggleClass("delete");
+});
+
+
+$(".case-item").click(function(){
+	$(".case-item.item-2").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-2.bayk, .case-item.item-2 a.down, .case-item.item-2 a.UP1, .case-item.item-2 a.arrow").toggleClass("play");
+  $(".case-item.item-2.title, .case-item.item-2.enter-pic").toggleClass("delete");
+});
+
+
+$(".case-item").click(function(){
+	$(".case-item.item-3").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".maks, .case-item.item-3 a.down, .case-item.item-3 a.UP1, .case-item.item-3 a.arrow_w").toggleClass("play");
+  $(".case-item.item-3.title, .case-item.item-3.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-4").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-4.bayk, .case-item.item-4 a.down, .case-item.item-4 a.UP1, .case-item.item-4 a.arrow_w").toggleClass("play");
+  $(".case-item.item-4.title, .case-item.item-4.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-5").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-5.bayk, .case-item.item-5 a.down, .case-item.item-5 a.UP1, .case-item.item-5 a.arrow_w, .case-item.item-5 .nda").toggleClass("play");
+  $(".case-item.item-5.title, .case-item.item-5.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-6").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-6.bayk, .case-item.item-6 a.down, .case-item.item-6 a.UP1, .case-item.item-6 a.arrow_w, .case-item.item-6 .nda").toggleClass("play");
+  $(".case-item.item-6.title, .case-item.item-6.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-7").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-7.bayk, .case-item.item-7 a.down, .case-item.item-7 a.UP1, .case-item.item-7 a.arrow_w, .case-item.item-7 .nda").toggleClass("play");
+  $(".case-item.item-7.title, .case-item.item-7.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-8").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-8.bayk, .case-item.item-8 a.down, .case-item.item-8 a.UP1, .case-item.item-8 a.arrow_w").toggleClass("play");
+  $(".case-item.item-8.title, .case-item.item-8.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-9").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-9.bayk, .case-item.item-9 a.down, .case-item.item-9 a.UP1, .case-item.item-9 a.arrow_w").toggleClass("play");
+  $(".case-item.item-9.title, .case-item.item-9.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-10").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-10.bayk, .case-item.item-10 a.down, .case-item.item-10 a.UP1, .case-item.item-10 a.arrow_w").toggleClass("play");
+  $(".case-item.item-10.title, .case-item.item-10.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-11").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-11.bayk, .case-item.item-11 a.down, .case-item.item-11 a.UP1, .case-item.item-11 a.arrow_w").toggleClass("play");
+  $(".case-item.item-11.title, .case-item.item-11.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-12").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-12.bayk, .case-item.item-12 a.down, .case-item.item-12 a.UP1, .case-item.item-12 a.arrow_w").toggleClass("play");
+  $(".case-item.item-12.title, .case-item.item-12.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-13").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-13.bayk, .case-item.item-13 a.down, .case-item.item-13 a.UP1, .case-item.item-13 a.arrow").toggleClass("play");
+  $(".case-item.item-13.title, .case-item.item-13.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-14").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-14.bayk, .case-item.item-14 a.down, .case-item.item-14 a.UP1, .case-item.item-14 a.arrow_w").toggleClass("play");
+  $(".case-item.item-14.title, .case-item.item-14.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+	$(".case-item.item-15").toggleClass("open");
+	$(this).toggleClass("open");
+  $(".case-item.item-15.bayk, .case-item.item-15 a.down, .case-item.item-15 a.UP1, .case-item.item-15 a.arrow_w").toggleClass("play");
+  $(".case-item.item-15.title, .case-item.item-15.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+    $(".case-item.item-16").toggleClass("open");
+    $(this).toggleClass("open");
+  $(".case-item.item-16.bayk, .case-item.item-16 a.down, .case-item.item-16 a.UP1, .case-item.item-16 a.arrow_w, .work").toggleClass("play");
+  $(".case-item.item-16.title, .case-item.item-16.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+    $(".case-item.item-17").toggleClass("open");
+    $(this).toggleClass("open");
+  $(".case-item.item-17.bayk, .case-item.item-17 a.down, .case-item.item-17 a.UP1, .case-item.item-17 a.arrow_w, .work").toggleClass("play");
+  $(".case-item.item-17.title, .case-item.item-17.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+    $(".case-item.item-18").toggleClass("open");
+    $(this).toggleClass("open");
+  $(".case-item.item-18.bayk, .case-item.item-18 a.down, .case-item.item-18 a.UP1, .case-item.item-18 a.arrow_w, .case-item.item-18 .nda").toggleClass("play");
+  $(".case-item.item-18.title, .case-item.item-18.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+    $(".case-item.item-19").toggleClass("open");
+    $(this).toggleClass("open");
+  $(".case-item.item-19.bayk, .case-item.item-19 a.down, .case-item.item-19 a.UP1, .case-item.item-19 a.arrow_w, .case-item.item-19 .nda").toggleClass("play");
+  $(".case-item.item-19.title, .case-item.item-19.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+    $(".case-item.item-20").toggleClass("open");
+    $(this).toggleClass("open");
+  $(".case-item.item-20.bayk, .case-item.item-20 a.down, .case-item.item-20 a.UP1, .case-item.item-20 a.arrow").toggleClass("play");
+  $(".case-item.item-20.title, .case-item.item-20.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+    $(".case-item.item-21").toggleClass("open");
+    $(this).toggleClass("open");
+  $(".case-item.item-21.bayk, .case-item.item-21 a.down, .case-item.item-21 a.UP1, .case-item.item-21 a.arrow_w").toggleClass("play");
+  $(".case-item.item-21.title, .case-item.item-21.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+    $(".case-item.item-22").toggleClass("open");
+    $(this).toggleClass("open");
+  $(".case-item.item-22.bayk, .case-item.item-22 a.down, .case-item.item-22 a.UP1, .case-item.item-22 a.arrow_w").toggleClass("play");
+  $(".case-item.item-22.title, .case-item.item-22.enter-pic").toggleClass("delete");
+});
+
+$(".case-item").click(function(){
+    $(".case-item.item-24").toggleClass("open");
+    $(this).toggleClass("open");
+  $(".case-item.item-24.bayk, .case-item.item-24 a.down, .case-item.item-24 a.UP1, .case-item.item-24 a.arrow_w").toggleClass("play");
+  $(".case-item.item-24.title, .case-item.item-24.enter-pic").toggleClass("delete");
+});
 
 
 $("a.buttons:nth-last-child(1)").click(function () {
@@ -150,50 +289,44 @@ var typed = new Typed('.typed', {
   cursorChar: '|',
   autoInsertCss: true,
   shuffle: true,
-  smartBackspace: false,
-  loop: true
-});
-
-var typed = new Typed('.typed_promo', {
-  strings: ['Hi! I am Mikhail Shipov, a UX/UI designer.', 'I work in design and branding, and my programming skills help me create thoughtful solutions.', 'I ve completed numerous projects, from landing pages and websites to design systems and government platforms.'],
-  typeSpeed: 6,
-  backSpeed: 14,
-  startDelay: 500,
-  backDelay: 1000,
-  showCursor: true,
-  cursorChar: '|',
-  autoInsertCss: true,
-  shuffle: true,
-  smartBackspace: false,
+  smartBackspace: true,
   loop: true
 });
 
 setTimeout(function(){
 $('body').addClass('selected');
-},1500)
+},2500)
 
 setTimeout(function(){
 $('.preloader').addClass('selected');
-},1500)
+},2500)
 
 setTimeout(function(){
 $('.preloader').addClass('none');
-},2000)
+},3000)
 
 
-new WOW().init();
+// window.addEventListener('load', () => { /* Страница загружена, включая все ресурсы */
+//   const preloader = document.querySelector('.preloader') /* находим блок Preloader */
+//   preloader.classList.add('preloader_hidden') /* добавляем ему класс для скрытия */
+// })
 
-$(window).scroll(function(){
-	if ($(this).scrollTop() > 1000) {
-		$('.totop').fadeIn();
-	} else {
-		$('.totop').fadeOut();
-	}
-});
+// const items = document.querySelectorAll('.case-item')
+// items.forEach(item => item.addEventListener("click", event => {
+//   event.target.classList.toggle('open')
+// }));
 
 
-$('.totop').click(function(){
-	$('html, body').animate({scrollTop : 0},50);
-	return false;
-});
+// document.getElementsByClassName('.open').addEventListener('click', function() {
+//   this.classList.remove('open');
+// });
 
+// document.getElementsByClassName('.case-item').addEventListener('click', function() {
+
+	//   $(".open").addClass("open");
+	//    $(this).removeClass("open");
+	// });
+	//   $(".case-item").click(function(){
+    //   $(".open").removeClass("open");
+    //   $(this).addClass("open");
+    // });
