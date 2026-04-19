@@ -158,8 +158,8 @@ var typed = new Typed('.typed_promo', {
   strings: ['Hi! I am Mikhail Shipov, a UX/UI designer. I work in design and branding, and my programming skills help me create thoughtful solutions.', 'I ve completed numerous projects, from landing pages and websites to design systems and government information platforms.'],
   typeSpeed: 7,
   backSpeed: 10,
-  startDelay: 500,
-  backDelay: 1000,
+  startDelay: 700,
+  backDelay: 1500,
   showCursor: true,
   cursorChar: '|',
   autoInsertCss: true,
@@ -184,7 +184,7 @@ $('.preloader').addClass('none');
 new WOW().init();
 
 $(window).scroll(function(){
-	if ($(this).scrollTop() > 450) {
+	if ($(this).scrollTop() > 550) {
 		$('.totop').fadeIn();
 	} else {
 		$('.totop').fadeOut();
@@ -193,6 +193,6 @@ $(window).scroll(function(){
 
 
 $('.totop').click(function(){
-	$('html, body').animate({scrollTop : 0},50);
+	$('html, body').animate({scrollTop : 0},30);
 	return false;
 });
