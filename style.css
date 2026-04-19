@@ -134,6 +134,13 @@
   .mshipov {
     color: #ffffff5d;
     font-family: 'MTSWide-Regular';
+    transition: .2s all;
+  }
+
+  .mshipov:hover {
+    color: white;
+    cursor: pointer;
+    transform: translateY(-5px);
   }
 
   @media all and (max-width: 1440px) {
@@ -526,6 +533,7 @@
     bottom: 40px;
     margin: auto;
     text-align: center;
+    z-index: 400;
   }
 
 
@@ -1412,6 +1420,7 @@
     flex-direction: column;
     align-items: center;
     letter-spacing: 0.09rem;
+    cursor: pointer;
   }
 
   .txt span {
@@ -1423,6 +1432,7 @@
     font-size: 12px;
     opacity: .7;
     transition: .2s all;
+    cursor: pointer;
   }
 
   .txt span a:hover {
@@ -1691,7 +1701,8 @@
 
   .fancybox-button {
     background: transparent;
- }
+  }
+
   .scrolldown {
     --color: white;
     --sizeX: 30px;
