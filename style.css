@@ -967,7 +967,6 @@
     transition-duration: 0.5s;
     transform: scale(0.6);
     z-index: 2000;
-    cursor: pointer;
   }
 
   .btn .icon {
@@ -975,7 +974,7 @@
     position: fixed;
     height: 40px;
     width: 40px;
-
+    cursor: pointer;
   }
 
   .btn .icon:before {
