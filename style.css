@@ -144,6 +144,7 @@
   .first-container {
         width: 100%!important;
         display: flex!important;
+        margin-bottom: 220px;
 }
 
 .cases_wrap {
