@@ -248,7 +248,7 @@ scale: 1.4;
   scale: 1;
   margin-bottom: 18px;
   cursor: pointer;
-   background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.6, rgba(255, 255, 255, 0)), color-stop(0.97, oklch(70.4% 0.04 256.788)));
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.6, rgba(255, 255, 255, 0)), color-stop(0.97, oklch(70.4% 0.04 256.788)));
 }
 
 .boks:hover img {
@@ -297,6 +297,7 @@ scale: 1.4;
   background: #000;
   color: #62f300;
   border-radius: 50px;
+ transform: translate(0px, 7px);
 }
 
   .lines {
@@ -883,6 +884,7 @@ scale: 1.4;
     transition-duration: 0.5s;
     transform: scale(0.6);
     z-index: 2000;
+    cursor: pointer;
   }
 
   .btn .icon {
@@ -1821,7 +1823,8 @@ a span:nth-of-type(3) {
     right: 34px;
     width: 50px;
     height: 50px;
-    background-color: #ffffff4a;
+    background: #ffffff4a no-repeat center center url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M9 16V3.83L14.59 9.42L16 8L8 0L0 8L1.41 9.41L7 3.83V16H9Z' fill='black' style='fill:black;fill-opacity:1;'/%3E%3C/svg%3E");
+    background-size: 25%;
     border: 2px solid black;
     border-radius: 50%;
     z-index: 300;
@@ -1838,6 +1841,8 @@ a span:nth-of-type(3) {
 .totop:hover {
   font-size: 26px;
   filter: grayscale(0);
+  background: black no-repeat center center url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M9 16V3.83L14.59 9.42L16 8L8 0L0 8L1.41 9.41L7 3.83V16H9Z' fill='%2362F300' style='fill:%2362F300;fill:color(display-p3 0.3843 0.9529 0.0000);fill-opacity:1;'/%3E%3C/svg%3E");
+  background-size: 25%;
 }
 
 .scrolldown {
