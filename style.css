@@ -285,12 +285,12 @@ scale: 1.4;
     align-items: center;
     justify-content: center;
     margin: auto auto 50px auto;
-    background: black;
-    color: white;
+    color: var(--fg);
     border-radius: 20px;
     transition: .2s all;
     cursor: pointer;
     font-weight: 400;
+    border: 2px solid black;
 }
 
 #fbtn:hover {
