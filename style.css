@@ -1178,6 +1178,7 @@
     animation: sdb 2s infinite;
     opacity: 0;
     box-sizing: border-box;
+    cursor: pointer;
   }
 
   a span:nth-of-type(1) {
