@@ -1686,6 +1686,13 @@
     box-shadow: 0px 0px 20px #00000057;
   }
 
+  .fancybox-button svg {
+    color: #62f300;
+  }
+
+  .fancybox-button {
+    background: transparent;
+ }
   .scrolldown {
     --color: white;
     --sizeX: 30px;
