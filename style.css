@@ -171,6 +171,14 @@
         top: -130px;
         bottom: 0;
         } 
+        .aboutme {
+    width: 75%;
+    margin: 80% auto auto auto;
+    text-align: center;
+    font-weight: 300;
+    line-height: 23px;
+    font-size: 14px;
+}
 }
 
 
